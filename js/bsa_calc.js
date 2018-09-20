@@ -29,6 +29,7 @@ function calculate() {
     // ==========================================
     // Todo: Perform BSA calculation here
 
+    var BSA = Math.sqrt(((height * 2.54) * (weight * 0.454 ))/ 3600)
     // -------------------------------
     // Ideal Body Weight (IBW)
     // -------------------------------
@@ -39,13 +40,13 @@ function calculate() {
 
         // ==========================================
         // Todo: Perform female IBW calculation here
-
+    var IBW = 45.5 + 2.3 * (height - 60)
 
     } else if ( male ) {
 
         // ==========================================
         // Todo: Perform male IBW calculation here
-
+        var IBW = 50 + 2.3 * (height - 60)
     }
 
     // -------------------------------
@@ -56,7 +57,7 @@ function calculate() {
 
     // ==========================================
     // Todo: Perform BMI calculation here
-
+    var BMI = (weight * 0.0454) / (Math.pow((height * 0.0254), 2)) * 10
 
 
     // Do not modify this function call
